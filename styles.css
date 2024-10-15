@@ -16,12 +16,93 @@
   box-sizing: border-box;
 }
 
-.section__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
+
+.img-circle{
+  max-width: 10rem;
+}
+.profile{
+  border-radius: 10px;
+  background-color: #fdfffe;
+  /* box-shadow: 0px 0px 5px 1px  black; */
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.profile-about{
+  /* max-width: 50%; */
+  padding: 10px;
+}
+.tech-title{
+  font-weight: bold;
+}
+.tech-title span{
+  color: #009dff;
+}
+.tech-stack-container {
+  overflow: hidden;
+  /* max-width: 80%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.tech-stack {
+  display: flex;
+  gap: 10px; /* Adjust gap between icons */
+  /* animation: scroll-left 10s linear infinite; */
+}
+.tech-stack2 {
+  display: flex;
+  gap: 10px; /* Adjust gap between icons */
+  /* transform: translateX(-105%); */
+  /* animation: scroll-right 10s linear infinite; */
+}
+
+.tech-stack img {
+  height: 50px; /* Adjust icon size */
+  width: 50px;
+}
+.tech-stack2 img {
+  height: 50px; /* Adjust icon size */
+  width: 50px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(105%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(105%);
+  }
+}
+.company{
+  max-width: 5rem;
+  height: auto;
+}
+.experience{
+  border-radius: 10px;
+  background-color: #fdfffe;
+  /* box-shadow: 0px 0px 5px 1px  black; */
+  margin-bottom: 1rem;
+  padding: 0;
+  width: 100%;
+}
+.experience-info{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.experience-info span{
+  font-weight: bold;
+  color: var(--text-dark);
+}
 .section__subheader {
   max-width: fit-content;
   padding: 8px;
@@ -164,6 +245,7 @@ nav {
   gap: 4rem 2rem;
   overflow: hidden;
   min-height: 80vh;
+  padding-top: 5rem;
 }
 
 .header__image {
@@ -276,16 +358,10 @@ nav {
   color: var(--text-dark);
 }
 
-.skill__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* Center content vertically */
-  gap: 2rem;
-}
-
+  
+/* 
 .skill__content {
-  text-align: center; /* Center text within the content */
+  text-align: center;
 }
 
 .skill__content .section__header {
@@ -363,7 +439,7 @@ nav {
 .skill__card p {
   color: var(--text-light);
   line-height: 1.5rem;
-}
+} */
 
 #section_portfolio {
   display: flex;
