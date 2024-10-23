@@ -151,7 +151,7 @@
     
         <h3 class="text-center mb-4" data-aos="fade-up">Tech Stack</h3>
         <div class="techstack text-center">
-          <img data-aos="zoom-in" loading="lazy" src="https://skillicons.dev/icons?i=react" alt="">
+          <img data-aos="zoom-in"  loading="lazy" src="https://skillicons.dev/icons?i=react" alt="">
           <img data-aos="zoom-in" loading="lazy" src="https://skillicons.dev/icons?i=bootstrap" alt="">
           <img data-aos="zoom-in" loading="lazy" src="https://skillicons.dev/icons?i=tailwind" alt="">
           <img data-aos="zoom-in" loading="lazy" src="https://skillicons.dev/icons?i=laravel" alt="">
@@ -166,7 +166,7 @@
       </div>
     </section>
 
-    <section class="experience-section container py-5">
+    <section class="experience-section container-fluid py-5 ">
       <h1 class="text-center mb-4" data-aos="fade-up">My <span>Experience</span></h1>
       <div class="timeline">
         <!-- First item -->
@@ -238,6 +238,10 @@
     
     <style>
       @media (max-width: 764px) {
+          .experience-section{
+              max-width:100%;
+              overflow:hidden;
+          }
         .d-flex {
           flex-direction: column;
         }
@@ -266,8 +270,8 @@
 
 
 
-    <section id="section_portfolio" data-aos="fade-up" data-aos-duration="1000" class="pt-5">
-      <h1><span>Project </span>Portfolio</h1>
+    <section id="section_portfolio" class="pt-5">
+      <h1 data-aos="fade-up" data-aos-duration="1000" ><span>Project </span>Portfolio</h1>
       <div class="portfolio-container">
     
         <div class="portfolio-card" data-aos="zoom-in" data-aos-duration="500">

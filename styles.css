@@ -85,7 +85,10 @@
     }
 
   
-
+.experience-section{
+  max-width: 100%;
+  overflow: hidden;
+}
 
     .about-section {
       background-color: #f8f9fa; /* Light background */
@@ -105,9 +108,16 @@
       gap: 1rem; /* Space between tech stack items */
     }
     .techstack img{
-      max-width: 50px;
+      width: 50px;
       height: auto;
     }
+    @media only screen and (max-width: 600px) {
+      .techstack img{
+        width: 50px;
+        height: auto;
+      }
+    }
+    
 @keyframes scroll-left {
   0% {
     transform: translateX(105%);
