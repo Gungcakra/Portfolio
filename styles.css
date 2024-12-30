@@ -111,6 +111,34 @@
       width: 50px;
       height: auto;
     }
+    @media (max-width: 764px) {
+      .experience-section{
+          max-width:100%;
+          overflow:hidden;
+      }
+    .d-flex {
+      flex-direction: column;
+    }
+
+    .col-5, .col-md-6, .col-sm-6 {
+      width: 100%;
+    }
+
+    .col-2, .col {
+      width: 100%;
+    }
+.col-kanan{
+  padding-top: 50px;
+}
+    .experience {
+      margin-bottom: 15px;
+      padding: 20px;
+    }
+    .experience-desc{
+      align-items: center;
+      text-align: center;
+    }
+  }
     @media only screen and (max-width: 600px) {
       .techstack img{
         width: 50px;
@@ -491,6 +519,48 @@ nav {
   color: var(--text-light);
   line-height: 1.5rem;
 } */
+.switch {
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.switch .icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.switch .icon.sun {
+  color: #f39c12;
+}
+
+.switch .icon.moon {
+  color: #8e44ad;
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.switch.active .icon.sun {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.switch.active .icon.moon {
+  transform: translateX(0);
+  opacity: 1;
+}
 
 .experience-section h1{
   font-size: 2.5rem;

@@ -1,0 +1,34 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a  {
+  color: #ffffff;
+}
+body.dark-mode #section_portfolio {
+  color: #ffffff;
+}
+body.dark-mode 
+
+body.dark-mode .header__container,
+body.dark-mode .about-section,
+body.dark-mode .experience-section,
+body.dark-mode .portfolio-container,
+body.dark-mode .portfolio-card,
+body.dark-mode .card,
+body.dark-mode #section_portfolio,
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode .portfolio-card .project-description,
+body.dark-mode .portfolio-card .project-title,
+body.dark-mode .portfolio-card .details-row,
+body.dark-mode .card-title,
+body.dark-mode .card-subtitle,
+body.dark-mode .card-text,
+body.dark-mode .text-muted {
+  color: #ffffff;
+}

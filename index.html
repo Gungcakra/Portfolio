@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="darkmode.css" />
     <title>Cakra Jaya</title>
   </head>
   <body>
@@ -40,6 +41,10 @@
       </ul>
       <div class="nav__btn">
         <a href="assets/CV.pdf" download="">Download CV</a>
+        <!-- <div class="switch" id="dark-mode-toggle" onclick="toggleDarkMode()">
+          <div class="icon sun">🌞</div>
+          <div class="icon moon">🌙</div>
+      </div> -->
       </div>
     </nav>
 
@@ -235,50 +240,16 @@
       </div>
     </section>
   
-    
-    <style>
-      @media (max-width: 764px) {
-          .experience-section{
-              max-width:100%;
-              overflow:hidden;
-          }
-        .d-flex {
-          flex-direction: column;
-        }
-    
-        .col-5, .col-md-6, .col-sm-6 {
-          width: 100%;
-        }
-    
-        .col-2, .col {
-          width: 100%;
-        }
-    .col-kanan{
-      padding-top: 50px;
-    }
-        .experience {
-          margin-bottom: 15px;
-          padding: 20px;
-        }
-        .experience-desc{
-          align-items: center;
-          text-align: center;
-        }
-      }
-    </style>
-    
-
-
 
     <section id="section_portfolio" class="pt-5">
-      <h1 data-aos="fade-up" data-aos-duration="1000" ><span>Project </span>Portfolio</h1>
+      <h1 class="text-center" data-aos="fade-up" data-aos-duration="1000" ><span>Project </span>Portfolio</h1>
       <div class="portfolio-container">
     
         <div class="portfolio-card" data-aos="zoom-in" data-aos-duration="500">
           <img loading="lazy" src="assets/php-template.webp" alt="Project 1">
           <div class="portfolio-details">
             <div class="project-links">
-              <a href="https://github.com/Gungcakra/php-template.git" target="_blank">
+              <a href="https://github.com/Gungcakra/php-template" target="_blank">
                 <i class="fa-brands fa-github" style="color: #000000;"></i>
               </a>
               <a href="https://php-template.cakra-portfolio.my.id/" target="_blank">
@@ -581,6 +552,23 @@
 
     
         <div class="portfolio-card" data-aos="zoom-in" data-aos-duration="500">
+          <img loading="lazy" src="assets/hubsense.webp" alt="Project 10">
+          <div class="portfolio-details">
+            <div class="project-links">
+              <a href="https://github.com/Gungcakra/Hubsensee-Landing-Page" target="_blank">
+                <i class="fa-brands fa-github" style="color: #000000;"></i>
+              </a>
+              <a href="https://project1-url.com" target="_blank">
+              </a>
+            </div>
+            <div class="details-row">
+              <div class="project-title">Hubsensee</div>
+            </div>
+            <p class="project-description">Landing page of Hubsensee, a website for student and teacher attendance, created during an internship and styled using Bootstrap.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-aos="zoom-in" data-aos-duration="500">
           <img loading="lazy" src="assets/learncode.webp" alt="Project 10">
           <div class="portfolio-details">
             <div class="project-links">
@@ -631,6 +619,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script>
       AOS.init();
+
+      const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            const isDarkMode = body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode", !isDarkMode);
+            toggleButton.classList.toggle("active", isDarkMode);
+        });
+
+        // Initialize
+        body.classList.add("light-mode");
     </script>
   </body>
 </html>
